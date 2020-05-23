@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-width: 55%;
+  flex: 1 0 55%;
 }
 .image-box-content {
   display: flex;
