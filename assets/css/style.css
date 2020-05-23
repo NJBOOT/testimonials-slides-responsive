@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.hidden {
+  display: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.container-main {
+  width: 100vw;
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/pattern-curve.svg");
+  /* background-attachment: scroll; */
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  background-size: 50%;
+  width: 100%;
+  padding: 5%;
+}
+.image-box {
+  order: 1;
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-width: 55%;
+}
+.image-box-content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 11%;
+  width: 100%;
+}
+
+.image {
+  overflow: hidden;
+  position: relative;
+  top: 24px;
+}
+
+.user-image {
+  border-radius: 5px;
+  width: 100%;
+}
+.text-box {
+  order: 0;
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+  background-size: 20%;
+  padding-left: 8%;
+}
+.testimonial {
+  padding: 25px 20px 15px 0px;
+  padding-top: 15%;
+  color: hsl(240, 38%, 20%);
+}
+
+.message {
+  min-width: 140%;
+  position: relative;
+  font-size: 2.2vw;
+  line-height: 1.4;
+}
+.user {
+  display: flex;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.4vw;
+}
+.position {
+  padding-left: 10px;
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+  font-size: 1.4vw;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  margin-left: 8%;
+  background-color: #ffffff;
+  position: relative;
+  top: -2px;
+  border-radius: 30px;
+}
+
+.previous,
+.next {
+  padding: 15px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+}
