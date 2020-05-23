@@ -55,7 +55,7 @@
        </div>
      </div>
    </div>
-   <div class="slide hidden">
+   <div class="slide">
     <div class="slide-content">
       <div class="image-box">
         <div class="image-box-content">
@@ -91,9 +91,29 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Nico</a>.
   </div>
 </div>
+  <script>
+    const slides = document.querySelectorAll(".slide")
+    const secondSlide = slides[1]
+    const prev = document.querySelectorAll(".previous")
+    const next = document.querySelectorAll(".next")
 
+    secondSlide.classList.add('hidden');
+
+    for (let i=0; i < prev.length ; i++){
+      prev[i].addEventListener('click', (e)=>{
+        slides[0].classList.toggle('hidden');
+        slides[1].classList.toggle('hidden');
+      })
+    }
+    for (let i=0; i < next.length ; i++){
+      next[i].addEventListener('click', (e)=>{
+        slides[0].classList.toggle('hidden');
+        slides[1].classList.toggle('hidden');
+      })
+    }
+  </script>
 </body>
 </html>
